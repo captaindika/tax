@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "7b60d62f-4534-4dbc-9f39-2c6b4a58718d",
+		"name": "Tax",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Lucky Stretch\",\r\n    \"tax_code\": 2,\r\n    \"price\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1.0/tax",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1.0",
+						"tax"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "insert",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Lucky Stretch\",\r\n    \"tax_code\": 2,\r\n    \"price\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1.0/tax",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1.0",
+								"tax"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23-V8DijLQoBWoKG7Z62L1kQylfOPQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Nov 2021 19:04:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"mantap\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1.0/tax",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1.0",
+						"tax"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1.0/tax",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1.0",
+								"tax"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "134"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"86-lRAqK8Z1vz7x0tuUAgPmZNX6vc8\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 09 Nov 2021 19:04:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"name\": \"Lucky Stretch\",\n            \"tax_code\": 2,\n            \"type\": \"Tobacco\",\n            \"refundable\": \"No\",\n            \"price\": 1000,\n            \"tax\": 30,\n            \"amount\": 1030\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
